@@ -1,0 +1,995 @@
+import java.util.LinkedList;
+
+class Q01_Linked_List
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		li.add("ABCD");
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50, ABCD]
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q02_Linked_List
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList( 10 );
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+ error: incompatible types: int cannot be converted to Collection
+    LinkedList li = new LinkedList( 10 );
+									^
+
+
+We can pass constructor Capacity in LinkedListm,But 
+In ArrayList we can pass/set ArrayList Capacity.
+
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q03_Linked_List_remove
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		System.out.println( li.remove() );
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+ 10
+[20, 30, 40, 50]
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q04_Linked_List_remove
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		System.out.println( li.remove(3) );
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+ 40
+[20, 30, 40, 50]
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q05_Linked_List_addFirst
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		li.addFirst(100);
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+[100, 10, 20, 30, 40, 50]
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q06_Linked_List_addLast
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		li.addLast(500);
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50, 500]
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q07_Linked_List_getFirst
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		System.out.println( li.getFirst() );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+10
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q08_Linked_List_getLast
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		System.out.println( li.getLast() );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+50
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q09_Linked_List_removeFirst
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		System.out.println( li.removeFirst() );
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+10
+[20, 30, 40, 50]
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q10_Linked_List_removeLast
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println( li );
+		
+		System.out.println( li.removeLast() );
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+50
+[10, 20, 30, 40]
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q11_Linked_List_Error
+{
+	public static void main(String args[])
+	{
+		LinkedList li = new LinkedList();
+		
+		System.out.println( li.removeFirst() );
+		
+		System.out.println( li );
+	}
+}
+
+
+/* 
+
+Exception in thread "main" java.util.NoSuchElementException
+
+
+
+this Error occur for all like getFirst, getLast, removeFirst, removeLast
+Exception in thread "main" java.util.NoSuchElementException
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q13_Linked_List
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		LinkedList li2 = li1;
+		
+		System.out.println( li1 );
+		System.out.println( li2 );
+		
+	}
+}
+
+
+/*
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+
+
+
+if Case : 
+LinkedList li2 = new LinkedList(li1);
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+
+
+
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q14_Linked_List
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		LinkedList li2 = li1;
+		System.out.println( li1 );
+		System.out.println( li2 );
+		
+		li1.add(500);
+		
+		System.out.println( li1 );
+		System.out.println( li2 );
+	}
+}
+
+
+/*
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+
+[10, 20, 30, 40, 50, 500]
+[10, 20, 30, 40, 50, 500]
+
+[10, 20, 30, 40, 50, 500, 1000]
+[10, 20, 30, 40, 50, 500, 1000]
+------------------------------
+*/
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q15_Linked_List_Clone
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		LinkedList li2 = (LinkedList) li1.clone();
+		
+		System.out.println( li1 );
+		System.out.println( li2 );
+		
+	}
+}
+
+
+/*
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q16_Linked_List_Clone
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		LinkedList li2 = (LinkedList) li1.clone();
+		
+		System.out.println( li1 );
+		System.out.println( li2 );
+		
+		li2.add(50);
+		
+		System.out.println( li1 );
+		System.out.println( li2 );
+		
+	}
+}
+
+
+/*
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50, 50]
+
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q17_Linked_List
+{
+	public static void main(String args[])
+	{
+		LinkedList<Integer> li1 = new LinkedList<>();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		
+		System.out.println( li1 );
+		
+	}
+}
+
+
+/*
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50, 50]
+
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q18_Linked_List
+{
+	public static void main(String args[])
+	{
+		LinkedList<Integer> li1 = new LinkedList<>();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		li1.add("Ram ji");
+		
+		System.out.println( li1 );
+		
+	}
+}
+
+
+/*
+error: no suitable method found for add(String)
+                li1.add("Ram ji");
+                   ^
+
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q19_Linked_List_add
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		System.out.println( li1 );
+		
+		li1.add(2, 100);
+		System.out.println( li1 );
+		
+	}
+}
+
+
+/*
+[10, 20, 30, 40, 50]
+[10, 20, 100, 30, 40, 50]
+
+
+------------------------------
+*/
+
+
+
+
+
+
+import java.util.*;
+
+class Q20_Linked_List_subList
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		System.out.println( li1 );
+		
+		List ab = li1.subList(2, 5);
+
+		System.out.println( li1 );
+		System.out.println( ab );
+		
+	}
+}
+
+
+/*
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+[30, 40, 50]
+
+
+
+if Case :
+LinkedList ab = li1.subList(2, 5);
+ error: incompatible types: List cannot be converted to LinkedList
+                LinkedList ab = li1.subList(2, 5);
+                                           ^
+------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q21_Linked_List_removeAll
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		LinkedList li2 = new LinkedList();
+		li2.add(10);		li2.add(20);		li2.add(300);
+		li2.add(400);		li2.add(500);
+		
+		System.out.println( li1 );
+		System.out.println( li2 );
+		
+		li2.removeAll(li1);
+		
+		System.out.println( li1 );
+		System.out.println( li2 );
+		
+	}
+}
+
+
+/*
+
+
+[10, 20, 30, 40, 50]
+[10, 20, 300, 400, 500]
+[10, 20, 30, 40, 50]
+[300, 400, 500]
+
+
+------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q22_Linked_List_retainAll
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		LinkedList li2 = new LinkedList();
+		
+		li2.add(10);
+		li2.add(20);
+		li2.add(300);
+		li2.add(400);
+		li2.add(500);
+		
+		System.out.println( li1.retainAll(li2) );		
+	}
+}
+
+
+/*
+
+true
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q23_Linked_List_addAll
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		LinkedList li2 = new LinkedList();
+		
+		li2.addAll(li1);
+		
+		System.out.println( li1 );		
+		System.out.println( li2 );		
+	}
+}
+
+
+/*
+
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q24_Linked_List_toArray
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+		
+		li1.add(10);
+		li1.add(20);
+		li1.add(30);
+		li1.add(40);
+		li1.add(50);
+		
+		Object o[] = new Object[li1.size() ];
+		o = li1.toArray();
+		
+		System.out.println( li1 );
+		
+		for( Object io : o)
+		{
+			System.out.print( io + ", " );
+		}
+	}
+}
+
+
+/*
+
+[10, 20, 30, 40, 50]
+10, 20, 30, 40, 50,
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q25_Linked_List_isEmpty
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+
+		System.out.println( li1.isEmpty() );
+		
+		li1.add(10);		li1.add(20);		li1.add(30);
+		li1.add(40);		li1.add(50);
+		
+		System.out.println( li1.isEmpty() );
+	}
+}
+
+
+/*
+
+
+
+true
+false
+
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q26_Linked_List_size
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+
+		System.out.println( li1.size() );
+		
+		li1.add(10);		li1.add(20);		li1.add(30);
+		li1.add(40);		li1.add(50);
+		
+		System.out.println( li1.size() );
+	}
+}
+
+
+/*
+
+
+
+0
+5
+
+------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.LinkedList;
+
+class Q27_Linked_List_get
+{
+	public static void main(String args[])
+	{
+		LinkedList li1 = new LinkedList();
+
+		li1.add(10);		li1.add(20);		li1.add(30);
+		li1.add(40);		li1.add(50);
+		
+		System.out.println( li1.get(2) );
+	}
+}
+
+
+/*
+
+
+
+30
+
+------------------------------
+*/
+
+
+
+
+
+
+
