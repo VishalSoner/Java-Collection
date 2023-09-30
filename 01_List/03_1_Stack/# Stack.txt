@@ -1,0 +1,288 @@
+import java.util.*;
+
+class Q01_Stack_push
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack();
+		
+		st.push(10);		st.push(20);		st.push(30);
+		st.push(40);		st.push(50);
+		
+		System.out.println( st );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.*;
+
+class Q02_Stack_push
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack();
+		System.out.println( st.size() );
+		System.out.println( st.capacity() );
+		
+		for(int i = 1; i  <= 10; i++)
+			st.push(10*i);
+		
+		System.out.println( st.size() );
+		System.out.println( st.capacity() );
+
+		st.push(500);
+		System.out.println( st.size() );
+		System.out.println( st.capacity() );
+	}
+}
+
+
+/* 
+
+0
+10
+
+10
+10
+
+11
+20
+
+
+
+
+1. Default Capacity of Stack is 10.
+2. Increase Capacity for this fromula :
+   new Capa. = Curr. * 2;
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.*;
+
+class Q03_Stack_Constructor
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack(20);
+		
+		for(int i = 1; i  <= 10; i++)
+			st.push(10*i);
+		
+		System.out.println( st.size() );
+		System.out.println( st.capacity() );
+	}
+}
+
+
+/* 
+
+error: constructor Stack in class Stack<E> cannot be applied to given types;
+                Stack st = new Stack(20);
+                           ^
+						   
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.*;
+
+class Q04_Stack_peek
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack();
+		
+		st.push(10);		st.push(20);		st.push(30);
+		st.push(40);		st.push(50);
+		
+		System.out.println( st );
+		
+		System.out.println( st.peek() );
+		System.out.println( st.peek() );
+		
+		System.out.println( st );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+50
+50
+[10, 20, 30, 40, 50]
+ 
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.*;
+
+class Q05_Stack_pop
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack();
+		
+		st.push(10);		st.push(20);		st.push(30);
+		st.push(40);		st.push(50);
+		
+		System.out.println( st );
+		
+		System.out.println( st.pop() );
+		System.out.println( st.pop() );
+		
+		System.out.println( st );
+	}
+}
+
+
+/* 
+
+[10, 20, 30, 40, 50]
+50
+40
+[10, 20, 30]
+ 
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.*;
+
+class Q06_Stack_pop
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack();
+		
+		System.out.println( st.pop() );
+		//System.out.println( st.peek() );
+		
+		System.out.println( st );
+	}
+}
+
+
+/* 
+
+Exception in thread "main" java.util.EmptyStackException
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.*;
+
+class Q07_Stack_empty
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack();
+		
+		System.out.println( st.empty() );
+		
+		st.push(10);		st.push(20);
+		st.push(30);		st.push(40);
+		st.push(50);		st.push(60);
+		
+		System.out.println( st.empty() );
+		
+	}
+}
+
+
+/* 
+
+true
+false
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
+import java.util.*;
+
+class Q08_Stack_Search
+{
+	public static void main(String args[])
+	{
+		Stack st = new Stack();
+		
+		st.push(10);		st.push(20);		st.push(30);		
+		st.push(40);		st.push(50);
+		
+		System.out.println( st.search(20) );
+		System.out.println( st.search(200) );
+		System.out.println( st.search(50) );
+		System.out.println( st.search(10) );
+		
+	}
+}
+
+
+/* 
+
+4
+-1
+1
+5
+
+
+.search() method doesn't return int of founded element it return the number 
+by which it will be poped.
+
+----------------------------------------------------
+*/
+
+
+
+
+
+
+
